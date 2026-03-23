@@ -10,6 +10,55 @@ window.addEventListener("scroll", () => {
 });
   
 
+const img = document.getElementById("mainImage");
+const lens = document.querySelector(".lens");
+const result = document.getElementById("result");
+
+const cx = 3;
+const cy = 3;
+
+// show zoom on hover
+img.addEventListener("mouseenter", () => {
+  lens.style.display = "block";
+  result.style.display = "block";
+
+  result.style.backgroundImage = `url(${img.src})`;
+  result.style.backgroundSize = `${img.width * cx}px ${img.height * cy}px`;
+});
+
+img.addEventListener("mouseleave", () => {
+  lens.style.display = "none";
+  result.style.display = "none";
+});
+
+img.addEventListener("mousemove", moveLens);
+lens.addEventListener("mousemove", moveLens);
+
+function moveLens(e) {
+  const rect = img.getBoundingClientRect();
+
+  let x = e.clientX - rect.left - lens.offsetWidth / 2;
+  let y = e.clientY - rect.top - lens.offsetHeight / 2;
+
+  if (x < 0) x = 0;
+  if (y < 0) y = 0;
+  if (x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth;
+  if (y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight;
+
+  lens.style.left = x + "px";
+  lens.style.top = y + "px";
+
+  result.style.backgroundPosition = `-${x * cx}px -${y * cy}px`;
+}
+
+// thumbnail click change image
+document.querySelectorAll(".prod-img img").forEach(el => {
+  el.addEventListener("click", () => {
+    img.src = el.src;
+    result.style.backgroundImage = `url(${el.src})`;
+  });
+});
+
 
 // ===== CONTENT2 DOWNLOAD FULL TECHNICAL DATATSHEET =====
 function openModal() {
