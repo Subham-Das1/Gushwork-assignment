@@ -412,27 +412,27 @@ const appData = {
     {
       title: 'Fishnet Manufacturing',
       content: 'High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.',
-      img: './assets/icons/worker.svg'
+      img: './assets/img/worker.png'
     },
     {
       title: 'Fishnet Manufacturing',
       content: 'High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.',
-      img: './assets/icons/worker.svg'
+      img: './assets/img/worker.png'
     },
     {
       title: 'Fishnet Manufacturing',
       content: 'High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.',
-      img: './assets/icons/worker.svg'
+      img: './assets/img/worker.png'
     },
     {
       title: 'Fishnet Manufacturing',
       content: 'High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.',
-      img: './assets/icons/worker.svg'
+      img: './assets/img/worker.png'
     },
     {
       title: 'Fishnet Manufacturing',
       content: 'High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.',
-      img: './assets/icons/worker.svg'
+      img: './assets/img/worker.png'
     }
   ]
 }
@@ -532,7 +532,7 @@ const processData = {
         "PE100 grade material",
         "Optimal molecular weight distribution"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Extrusion",
@@ -543,7 +543,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Cooling",
@@ -554,7 +554,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Sizing",
@@ -565,7 +565,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Quality Control",
@@ -576,7 +576,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Marking",
@@ -587,7 +587,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Cutting",
@@ -598,7 +598,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     },
     {
       name: "Packaging",
@@ -609,7 +609,7 @@ const processData = {
         "High-output extrusion lines",
         "Consistent wall thickness"
       ],
-      image: "./assets/icons/workers.svg"
+      image: "./assets/img/workers.png"
     }
   ]
 };
@@ -787,17 +787,17 @@ const portfolioData = {
     {
       title: "HDPE Fittings & Accessories",
       desc: "Complete range of electrofusion and butt fusion fittings, including elbows, tees, reducers, and couplers for seamless pipe connections.",
-      img: "./assets/icons/man.svg"
+      img: "./assets/img/man.png"
     },
     {
       title: "Professional Installation Services",
       desc: "Expert installation and fusion welding services ensuring optimal system performance, compliance with standards, and long-term reliability.",
-      img: "./assets/icons/worker.svg"
+      img: "./assets/img/worker.png"
     },
     {
       title: "PE-RT Heating Pipes",
       desc: "Polyethylene of Raised Temperature resistance pipes ideal for underfloor heating, radiator connections, and hot water applications.",
-      img: "./assets/icons/man.svg"
+      img: "./assets/img/man.png"
     }
   ]
 };
@@ -1103,10 +1103,10 @@ footer.appendChild(footerWrapper);
 const carousalContainer = document.querySelector(".carousal");
 
 const images = [
-  "./assets/icons/man.svg",
-  "./assets/icons/worker.svg",
-  "./assets/icons/man.svg",
-  "./assets/icons/worker.svg"
+  "./assets/img/man.png",
+  "./assets/img/worker.png",
+  "./assets/img/man.png",
+  "./assets/img/worker.png"
 ];
 
 let currentIndex = 0;
